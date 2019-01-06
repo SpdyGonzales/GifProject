@@ -50,6 +50,9 @@ export default class Game extends Component {
       })
     }).catch(function(err){
       console.log(err);
+      setTimeout(() => {
+        this.props.navigation.navigate('Friendly')
+       }, 15000);
     });
   }
   
